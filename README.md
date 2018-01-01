@@ -1,7 +1,10 @@
 # test-rent-java-decorator
 ## Ejemplar de un problema aplicando el patrón de diseño decorador y algunas pruebas unitarias
 
-#El problema:
+#Requirements
+_java7, java8 and maven3_
+
+#The Problem:
 A company rents bikes under following options:
 
 1. Rental by hour, charging $5 per hour
@@ -21,13 +24,13 @@ Note: we don't expect any kind of application, just a set of classes with its au
 # Deliverables:
 The link to your repository 
 
-## Solución
+## Solution
 La aplicación, esta compuesta por 7 clases, cada clase hace una función en especifica pero similar por lo que integra un patrón de diseño que modifica parcialmente la estructura del padre sin afectar a las demas clases hermanas.
 
 ## Diagrama UML
 <img src="./img/diagram.png"/>
  
-## Clases:
+## Classes:
 *IRent:* es una interfaz que ofrece la estructura de los metodos a la clase base Rent.
  
 *Rent:* es la clase padre que implemente los metodos necesarios que son utilizados para la categorizacion de las rentas.
