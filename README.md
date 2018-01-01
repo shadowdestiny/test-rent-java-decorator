@@ -64,7 +64,7 @@ La aplicación, esta compuesta por 7 clases, cada clase hace una función en esp
          // inyectando 2 dependencias
          Rent rent = new RentByDay(new RentByHours(new Rent()));    
 
-*testFamilySix:* ejemplo usando el plan familiar pasando por parametro 1 time, en representación de la semana, dia u hora obteniendo como resultado 170.0, por ser inferior a las 5 rentas, segun la logica no hay un descuento porcentual del 30%.
+*testFamilySix:* ejemplo usando el plan familiar pasando por parametro 1 time, en representación de la semana, dia u hora obteniendo como resultado 170.0, por ser superior a las 5 rentas, segun la logica no hay un descuento porcentual del 30%.
     
          // inyectando 6 dependencias
          Rent rent = new RentByWeek(new RentByDay(new RentByHours(new RentByWeek(new RentByDay(new RentByHours(new Rent()))))));
