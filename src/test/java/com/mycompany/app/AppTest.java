@@ -86,6 +86,7 @@ public class AppTest
      * Test case family all type
      * @author: lmarin
      * @date 01.01.2018
+     * promotion Family rental incluying 3 intances
      */
     public void testFamily()
     {
@@ -94,6 +95,40 @@ public class AppTest
         int time = 1;
         double result = rent.calculate(rent.charging(time));
         assertEquals(85.0 - (85.0 * RentConsts.FAMILY_RENTAL / 100), result);
+        assertTrue( true );
+        System.out.println(result);
+    }
+    /**
+     * Rigourous Test :-)
+     * Test case family all type
+     * @author: lmarin
+     * @date 01.01.2018
+     * promotion Family rental incluying 2 intances (without discount)
+     */
+    public void testFamilyTwo()
+    {
+        // inyectando dependencias
+        Rent rent = new RentByDay(new RentByHours(new Rent()));
+        int time = 1;
+        double result = rent.calculate(rent.charging(time));
+        assertEquals(25.0, result);
+        assertTrue( true );
+        System.out.println(result);
+    }
+    /**
+     * Rigourous Test :-)
+     * Test case family all type
+     * @author: lmarin
+     * @date 01.01.2018
+     * promotion Family rental greater than five (without discount)
+     */
+    public void testFamilySix()
+    {
+        // inyectando dependencias
+        Rent rent = new RentByWeek(new RentByDay(new RentByHours(new RentByWeek(new RentByDay(new RentByHours(new Rent()))))));
+        int time = 1;
+        double result = rent.calculate(rent.charging(time));
+        assertEquals(170.0, result);
         assertTrue( true );
         System.out.println(result);
     }
