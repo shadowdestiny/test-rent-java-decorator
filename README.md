@@ -1,7 +1,7 @@
 # test-rent-java-decorator
 ## Ejemplar de un problema aplicando el patrón de diseño decorador y algunas pruebas unitarias
 
-El problema:
+#El problema:
 A company rents bikes under following options:
 
 1. Rental by hour, charging $5 per hour
@@ -68,7 +68,7 @@ La aplicación, esta compuesta por 7 clases, cada clase hace una función en esp
 *testFamilySix:* ejemplo usando el plan familiar pasando por parametro 1 time, en representación de la semana, dia u hora obteniendo como resultado 170.0, por ser inferior a las 5 rentas, segun la logica no hay un descuento porcentual del 30%.
 
     <code>
-         // inyectando 2 dependencias
-         Rent rent = new RentByDay(new RentByHours(new Rent()));
+         // inyectando 6 dependencias
+         Rent rent = new RentByWeek(new RentByDay(new RentByHours(new RentByWeek(new RentByDay(new RentByHours(new Rent()))))));
     </code>
  
