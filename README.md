@@ -27,7 +27,7 @@ The link to your repository
 ## Solution
 La aplicación, esta compuesta por 7 clases, cada clase hace una función en especifica pero similar por lo que integra un patrón de diseño que modifica parcialmente la estructura del padre sin afectar a las demas clases hermanas.
 
-## Diagrama UML
+## Diagram UML
 <img src="./img/diagram.png"/>
  
 ## Classes:
