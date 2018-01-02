@@ -1,10 +1,10 @@
 # test-rent-java-decorator
 ## Ejemplar de un problema aplicando el patrón de diseño decorador y algunas pruebas unitarias
 
-#Requirements
+# Requirements
 _java7, java8 and maven3_
 
-#The Problem:
+# The Problem:
 A company rents bikes under following options:
 
 1. Rental by hour, charging $5 per hour
